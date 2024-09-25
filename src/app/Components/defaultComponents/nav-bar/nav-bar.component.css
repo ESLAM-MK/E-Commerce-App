@@ -1,0 +1,31 @@
+.activeRoute{
+  font-weight: bolder;
+}
+a
+{
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Playfair Display', serif; /* Elegant, high-quality font */
+  font-size: 3rem; /* Larger font size for emphasis */
+  font-weight: 700; /* Bold to stand out */
+  color: #FFD700; /* Golden yellow for a strong contrast */
+  letter-spacing: 0.05em; /* Slight spacing between letters */
+  text-transform: uppercase; /* Make the text appear more formal */
+  margin: 20px 0; /* Control the spacing around the heading */
+  text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.3); /* Subtle shadow for depth in a matching color */
+  position: relative;
+  padding-left: 20px; /* Create space for the decorative border */
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50%;
+  width: 5px; /* Decorative left border */
+  background: linear-gradient(180deg, #FF6347, #FF4500); /* Gradient from coral to orange-red */
+  border-radius: 2px;
+}
