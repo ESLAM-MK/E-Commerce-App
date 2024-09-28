@@ -983,7 +983,8 @@
     "images": [
       "https://cdn.dummyjson.com/products/images/groceries/Apple/1.png"
     ],
-    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Apple/thumbnail.png"
+    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Apple/thumbnail.png",
+    "incart": false
   },
   {
     "id": 17,
@@ -1275,7 +1276,8 @@
     "images": [
       "https://cdn.dummyjson.com/products/images/groceries/Cucumber/1.png"
     ],
-    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Cucumber/thumbnail.png"
+    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Cucumber/thumbnail.png",
+    "incart": false
   },
   {
     "id": 22,
@@ -1508,7 +1510,8 @@
     "images": [
       "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/1.png"
     ],
-    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/thumbnail.png"
+    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/thumbnail.png",
+    "incart": false
   },
   {
     "id": 26,

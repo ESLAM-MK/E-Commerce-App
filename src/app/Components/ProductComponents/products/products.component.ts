@@ -16,7 +16,7 @@ export class ProductsComponent implements OnInit {
   productListData: any[] = [];
   searchName: string = '';
   filteredProductListData: any[] = [];
-
+  price :number =20
   constructor(private prodServ: ProductserviceService, private router: Router, private toastr: ToastrService) {}
 
   ngOnInit(): void {
@@ -43,7 +43,7 @@ export class ProductsComponent implements OnInit {
       });
     }
   }
-  
+
   removeFromCart(productId: number) {
     this.prodServ.removeFromCart(productId).subscribe(response => {
       this.toastr.success('Product removed from cart', 'Success');
@@ -51,7 +51,7 @@ export class ProductsComponent implements OnInit {
       this.toastr.error('Failed to remove product from cart', 'Error');
     });
   }
-  
+
 
   onKeyUp(name: string) {
     this.searchName = name;
@@ -65,6 +65,13 @@ export class ProductsComponent implements OnInit {
     const input = $event.target as HTMLInputElement;
     this.filteredProductListData = this.productListData.filter((product) => {
       return product.title.toLowerCase().includes(input.value.toLowerCase());
+    });
+  }
+  filterByPrice($event: Event) {
+    const input = $event.target as HTMLInputElement;
+    this.price=Number(input.value)
+    this.filteredProductListData = this.productListData.filter((product) => {
+      return product.price <=input.value
     });
   }
 }
