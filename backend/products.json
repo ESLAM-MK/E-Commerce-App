@@ -241,7 +241,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/thumbnail.png",
-    "incart": true
+    "incart": false
   },
   {
     "id": 5,

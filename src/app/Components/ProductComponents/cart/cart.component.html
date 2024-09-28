@@ -87,9 +87,9 @@
                       <h5 class="text-uppercase">Total quantity: {{getTotalQuantity()}}</h5>
                       <h5>€ {{getTotalPrice()+15}}</h5>
                     </div>
-                    <a routerLink="/payment">
+                    <a [routerLink]=" checkItems()">
                       <button type="button" data-mdb-button-init data-mdb-ripple-init
-                        class="btn btn-dark btn-block btn-lg" data-mdb-ripple-color="dark">Register</button>
+                        class="btn btn-dark btn-block btn-lg" data-mdb-ripple-color="dark">Proceed to Buy</button>
 
                     </a>
 

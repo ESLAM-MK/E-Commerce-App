@@ -1,19 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { ProductserviceService } from '../../Services/productservice.service';
 
 @Component({
   selector: 'app-payment',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule,RouterLink],
   templateUrl: './payment.component.html',
   styleUrl: './payment.component.css'
 })
 export class PaymentComponent {
   paymentForm: FormGroup;
   cart = []; // Placeholder for useSelector equivalent
-
-  constructor(private fb: FormBuilder) {
+  path !:string
+  constructor(private fb: FormBuilder,private prodServ :ProductserviceService ) {
     // Initializing the form with validators
     this.paymentForm = this.fb.group({
       userNum: ['', [Validators.required, Validators.pattern(/^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/)]],
@@ -48,4 +50,12 @@ export class PaymentComponent {
   get userCVV() {
     return this.paymentForm.get('userCVV');
   }
+  validatePath():string{
+    if(this.paymentForm.valid){
+
+      this.path=''
+     }
+    return this.path
+  }
+
 }

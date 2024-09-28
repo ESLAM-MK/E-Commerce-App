@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
-
 const app = express();
 const PORT = 3000;
 
@@ -76,6 +75,9 @@ app.delete('/api/cart/:id', (req, res) => {
 
   res.json(cart);
 });
+
+
+
 
 // Update product quantity
 app.put('/api/cart/quantity', (req, res) => {
