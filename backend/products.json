@@ -58,7 +58,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png",
-    "incart": false
+    "incart": true
   },
   {
     "id": 2,
@@ -119,7 +119,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png",
-    "incart": false
+    "incart": true
   },
   {
     "id": 3,
@@ -180,7 +180,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/thumbnail.png",
-    "incart": false
+    "incart": true
   },
   {
     "id": 4,
