@@ -119,7 +119,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png",
-    "incart": true
+    "incart": false
   },
   {
     "id": 3,
@@ -302,7 +302,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/thumbnail.png",
-    "incart": false
+    "incart": true
   },
   {
     "id": 6,

@@ -1,48 +1,51 @@
-<div class="d-flex justify-content-center my-5">
-  <input (input)="searchByName($event)"
-    #name (keyup.enter)="onKeyUp(name.value)" class="mx-2 w-50 border border-success p-2" type="text" placeholder="Search by name" >
-  <button (click)="onKeyUp(name.value)" class="btn btn-success">Search</button>
-</div>
+<div class="container my-5">
+  <div class="d-flex justify-content-center my-5">
+    <input (input)="searchByName($event)"
+      #name (keyup.enter)="onKeyUp(name.value)" class="mx-2 w-50 border border-success p-2" type="text" placeholder="Search by name" >
+    <button (click)="onKeyUp(name.value)" class="btn btn-success">Search</button>
+  </div>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
 
-  @for (product of filteredProductListData; track $index) {
+    @for (product of filteredProductListData; track $index) {
 
-    <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img [src]="product.images" class="card-img-top" alt="...">
-              <div class="label-top shadow-sm p-3">{{product.title}}</div> <div class="card-body"> <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{product.price | currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a [routerLink]="['/prodDetails',product.id]" class="small text-muted">view details</a></span>
+      <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img [src]="product.images" class="card-img-top" alt="...">
+                <div class="label-top shadow-sm p-3">{{product.title}}</div> <div class="card-body"> <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{product.price | currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a [routerLink]="['/prodDetails',product.id]" class="small text-muted">view details</a></span>
+                </div>
+                <h5 class="card-title">
+               {{product.description}}</h5>
+                <h5 class="card-title text-secondary">
+                available in stock:  <span class="text-primary ">{{product.stock}}</span> items</h5>
+                <div class="d-flex justify-content-center">
+                <button  class="text-center mx-5 btn texxt"  [ngClass]="product.incart ? 'btn-dark' : 'btn-warning'" (click)="addToCart(product)">{{ product.incart ?'Remove from Cart':'Add to Cart' }} <i class="fa-sharp fa fa-cart-plus"></i>
+                </button>
               </div>
-              <h5 class="card-title">
-             {{product.description}}</h5>
-              <h5 class="card-title text-secondary">
-              available in stock:  <span class="text-primary ">{{product.stock}}</span> items</h5>
-              <div class="d-flex justify-content-center">
-              <button  class="text-center mx-5 btn texxt"  [ngClass]="product.incart ? 'btn-dark' : 'btn-warning'" (click)="addToCart(product)">{{ product.incart ?'Remove from Cart':'Add to Cart' }} <i class="fa-sharp fa fa-cart-plus"></i>
-              </button>
+                <div class="text-center my-4">
+                  <!-- <a href="#" class="btn btn-warning" >Check offer</a> -->
+                  <div class="clearfix mb-1">
+                  <span class="float-start"><i class="fa fa-question-circle">
+
+                  </i></span> <span class="float-end"><i class="fa fa-plus">
+
+                  </i>
+                </span>
+               </div>
+               </div>
+              </div>
             </div>
-              <div class="text-center my-4">
-                <!-- <a href="#" class="btn btn-warning" >Check offer</a> -->
-                <div class="clearfix mb-1">
-                <span class="float-start"><i class="fa fa-question-circle">
 
-                </i></span> <span class="float-end"><i class="fa fa-plus">
-
-                </i>
-              </span>
-             </div>
-             </div>
-            </div>
-          </div>
-
-    </div>
+      </div>
 
 
-}
-  @empty {
-    <h1>No Products Founded!</h1>
   }
+    @empty {
+      <h1>No Products Founded!</h1>
+    }
 
 
-  <!-- </div> -->
+    <!-- </div> -->
 
+
+</div>
