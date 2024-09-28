@@ -7,37 +7,58 @@ import { ProductserviceService } from '../../../Services/productservice.service'
   standalone: true,
   imports: [RouterLink],
   templateUrl: './cart.component.html',
-  styleUrl: './cart.component.css'
+  styleUrls: ['./cart.component.css'] // Use 'styleUrls' instead of 'styleUrl'
 })
 export class CartComponent {
-  items:any[]=[]
-  itemss:any[]=[]
-  totalQuantity:number=0
-   totalPrice:number =0
-constructor(private prodServ:ProductserviceService){}
+  items: any[] = [];
+  totalQuantity: number = 0;
+  totalPrice: number = 0;
+
+  constructor(private prodServ: ProductserviceService) {}
+
   ngOnInit() {
-this.items =this.prodServ.getCartItems()
+    this.loadCartItems();
+    this.calculateTotal();
+  }
 
- }
- removeFromCart(productId:number){
-  this.prodServ.removeFromCart(productId)
+  loadCartItems() {
+    this.prodServ.getCartItems().subscribe((data: any[]) => {
+      this.items = data;
+      this.calculateTotal();
+    });
+  }
 
- }
+  removeFromCart(productId: number) {
+    this.prodServ.removeFromCart(productId).subscribe(() => {
+      this.loadCartItems(); // Refresh cart items
+    });
+  }
 
-getTotalPrice(): number {
-  return this.prodServ.getTotalPrice()
-}
-decreaseQuantity(item: any): void {
-  this.prodServ.decreaseQuantity(item)
-}
+  decreaseQuantity(item: any): void {
+    item.quantity--;
+    this.prodServ.updateCartQuantity(item.id, item.quantity).subscribe(() => {
+      this.calculateTotal();
+    });
+  }
 
-// Method to increase the quantity of an item
-increaseQuantity(item: any): void {
-  this.prodServ.increaseQuantity(item)
-}
-getTotalQuantity():number{
-  return this.prodServ.getTotalQuantity()
-}
+  increaseQuantity(item: any): void {
+    item.quantity++;
+    this.prodServ.updateCartQuantity(item.id, item.quantity).subscribe(() => {
+      this.calculateTotal();
+    });
+  }
 
+  getTotalQuantity(): number {
+    return this.items.reduce((acc, item) => acc + item.quantity, 0);
+  }
 
+  getTotalPrice(): number {
+    return this.items.reduce((acc, item) => acc + (item.price || 0) * (item.quantity || 1), 0);
+  }
+  
+
+  calculateTotal() {
+    this.totalQuantity = this.getTotalQuantity();
+    this.totalPrice = this.getTotalPrice();
+  }
 }
