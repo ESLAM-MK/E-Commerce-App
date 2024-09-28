@@ -29,13 +29,21 @@ export class ProductsComponent implements OnInit {
   }
 
   addToCart(product: any) {
-    this.prodServ.addToCart(product.id).subscribe(response => {
-      this.toastr.success('Product added to cart', 'Success');
-    }, error => {
-      this.toastr.error('Failed to add product to cart', 'Error');
-    });
+    if (product.incart) {
+      // If the product is already in the cart, remove it
+      this.removeFromCart(product.id);
+      product.incart = false; // Update the incart status locally
+    } else {
+      // Add the product to the cart
+      this.prodServ.addToCart(product.id).subscribe(response => {
+        this.toastr.success('Product added to cart', 'Success');
+        product.incart = true; // Update the incart status locally
+      }, error => {
+        this.toastr.error('Failed to add product to cart', 'Error');
+      });
+    }
   }
-
+  
   removeFromCart(productId: number) {
     this.prodServ.removeFromCart(productId).subscribe(response => {
       this.toastr.success('Product removed from cart', 'Success');
@@ -43,6 +51,7 @@ export class ProductsComponent implements OnInit {
       this.toastr.error('Failed to remove product from cart', 'Error');
     });
   }
+  
 
   onKeyUp(name: string) {
     this.searchName = name;
