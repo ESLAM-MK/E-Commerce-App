@@ -1,31 +1,35 @@
 <div class="d-flex justify-content-center">
-<div class="row row-cols-1  g-4 m-5">
+  <div class="row row-cols-1  g-4 m-5">
 
-  <div class=" ">
-          <div class="card h-100 shadow-sm">
-            <img [src]="prodDetails.images" class="card-img-top" alt="...">
-            <div class="label-top shadow-sm p-3">{{ prodDetails.title}}</div> <div class="card-body"> <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{prodDetails.price | currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span>
-            </div>
-            <h5 class="card-title">
-              {{prodDetails.description}}</h5>
-            <h5 class="card-title text-secondary">
-            available in stock:  <span class="text-primary ">{{prodDetails.stock}}</span> items</h5>
-            <div class="text-center my-4">
-                    <div class="clearfix mb-1">
+    <div class=" ">
+      <div class="card h-100 shadow-sm">
+        <img [src]="prodDetails.images" class="card-img-top" alt="...">
+        <div class="label-top shadow-sm p-3">{{ prodDetails.title}}</div>
+        <div class="card-body">
+          <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{prodDetails.price |
+              currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a href="#"
+                class="small text-muted">Reviews</a></span>
+          </div>
+          <h5 class="card-title">
+            {{prodDetails.description}}</h5>
+          <h5 class="card-title text-secondary">
+            available in stock: <span class="text-primary ">{{prodDetails.stock}}</span> items</h5>
+          <div class="text-center my-4">
+            <div class="clearfix mb-1">
               <span class="float-start"><i class="fa fa-question-circle">
 
-              </i></span> <span class="float-end"><i class="fa fa-plus">
+                </i></span> <span class="float-end"><i class="fa fa-plus">
 
-              </i>
-            </span>
-            <button
-            class="btn btn-primary mt-3 "> <a class="textt"  [routerLink]="['']">Back to Products List</a></button>
-           </div>
-           </div>
+                </i>
+              </span>
+              <button class="btn btn-primary mt-3 "> <a class="textt" [routerLink]="['']">Back to Products
+                  List</a></button>
+            </div>
           </div>
         </div>
+      </div>
+
+    </div>
+
 
   </div>
-
-
-</div>

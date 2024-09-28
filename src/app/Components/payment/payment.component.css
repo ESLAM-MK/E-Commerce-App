@@ -1,0 +1,183 @@
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;}
+
+/* Container Styling */
+.container {
+  max-width: 550px;
+  padding: 0;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px !important;
+
+}
+
+/* Border Styling */
+.bForm {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info img {
+  width: 350px;
+  transform: translateY(-125px);
+  position: absolute;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+  color: #fff;
+  /* transform: translateY(120px); */
+  position: absolute;
+
+}
+
+.data span {
+  letter-spacing: 2px;
+}
+
+/* Form Styling */
+.form-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+
+.form-control {
+  border: 2px solid #ced4da;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+
+/* Error Message Styling */
+.text-danger {
+  font-size: 0.85rem;
+  color: #d9534f;
+}
+
+/* Row Layout for Exp Date and CVV */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col-6 {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.row .col-6:last-child {
+  margin-right: 0;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .data span {
+    font-size: 1rem;
+  }
+
+  .row .col-6 {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+
+/* Base Input Field Styling */
+.form-control {
+  border: 2px solid #ced4da; /* Light gray border */
+  padding: 12px 15px; /* Padding for inner spacing */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus and hover */
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  width: 100%; /* Full width of the container */
+}
+
+/* Input Field Focus State */
+.form-control:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow effect on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Input Field Hover State */
+.form-control:hover {
+  border-color: #0056b3; /* Darker border on hover */
+}
+
+/* Placeholder Styling */
+::placeholder {
+  color: #aaa; /* Light gray color for placeholder text */
+  opacity: 1; /* Ensure placeholder text is fully opaque */
+}
+
+/* Error State for Input Fields */
+.form-group input.ng-invalid.ng-touched {
+  border-color: #d9534f; /* Red border for invalid inputs */
+  background-color: #f8d7da; /* Light red background for visibility */
+}
+
+/* Error Message Styling */
+.text-danger {
+  font-size: 0.85rem; /* Smaller font size for error messages */
+  color: #d9534f; /* Red color for error messages */
+}
+
+/* Responsive Styles for Inputs */
+@media (max-width: 600px) {
+  .form-control {
+    padding: 10px; /* Slightly reduce padding on smaller screens */
+    font-size: 0.9rem; /* Adjust font size for better fit */
+  }
+}

@@ -1,0 +1,72 @@
+<div class="payment">
+  <div class="container mx-auto">
+    <div class="border mx-auto bForm">
+      <div class="info">
+        <img src="assets/card.jpg" alt="card">
+        <div class="data">
+          <span>{{ userNum?.value || 'XXXXXXXXXXXXXXXX' }}</span>
+          <span>{{ userDate?.value || 'XX/XX' }}</span>
+          <span>{{ userName?.value || 'XXXXX XXXXX XXXXX' }}</span>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()" class="w-100 px-4 my-2 from-content">
+
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              class="form-control inside"
+              placeholder="CARD NUMBER"
+              formControlName="userNum">
+            <div *ngIf="userNum?.invalid && userNum?.touched" class="text-danger">
+              <span *ngIf="userNum?.errors?.['required']">Card number is required</span>
+              <span *ngIf="userNum?.errors?.['pattern']">Please enter valid number</span>
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              class="form-control inside"
+              placeholder="CARDHOLDER NAME"
+              formControlName="userName">
+            <div *ngIf="userName?.invalid && userName?.touched" class="text-danger">
+              <span *ngIf="userName?.errors?.['required']">Name is required</span>
+              <span *ngIf="userName?.errors?.['pattern']">Please enter valid name</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6 form-group mb-3">
+              <input
+                type="text"
+                class="form-control inside"
+                placeholder="EXP DATE"
+                formControlName="userDate">
+              <div *ngIf="userDate?.invalid && userDate?.touched" class="text-danger">
+                <span *ngIf="userDate?.errors?.['required']">Date is required</span>
+                <span *ngIf="userDate?.errors?.['pattern']">Enter valid Date</span>
+              </div>
+            </div>
+
+            <div class="col-6 form-group mb-3">
+              <input
+                type="text"
+                class="form-control inside"
+                placeholder="CVV"
+                formControlName="userCVV">
+              <div *ngIf="userCVV?.invalid && userCVV?.touched" class="text-danger">
+                <span *ngIf="userCVV?.errors?.['required']">CVV is required</span>
+                <span *ngIf="userCVV?.errors?.['pattern']">Enter valid CVV</span>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 mt-3">PAY</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,477 @@
+
+.slider {
+  position: relative;
+}
+
+.slider img {
+  height: 95vh;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(1px);
+  border: 0;
+
+}
+
+.slider .carousel-caption {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.slider .carousel-caption h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+
+
+.bg-light-blue {
+  background-image: url(../../../../public/assets/bg-01.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.bg-light-blue img {
+  width: 550px;
+}
+
+.bg-light-blue h1 {
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+.bg-light-blue h4 {
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.66);
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 0.2px;
+}
+
+.card img {
+  transition: all 0.5s ease;
+}
+
+.first-card .card img:hover,
+.offer .card img:hover {
+  transform: scale(1.1);
+}
+
+.first-card {
+  cursor: pointer;
+}
+
+.properties {
+  display: flex;
+}
+
+.properties div {
+  border: 1px solid rgb(0, 0, 0, 0.66);
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 80px;
+}
+
+.properties div h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.properties div span {
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.66);
+  margin-top: 5px;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+
+
+
+/* about */
+
+.about-text {
+  text-align: center;
+}
+
+.about-text h6 {
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.66);
+  line-height: 1.25em;
+  font-size: 1.5rem;
+}
+
+.about-text h2 {
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 2.5rem;
+}
+
+.about-text p {
+  color: rgb(0, 0, 0, 0.66);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.headphone {
+  height: 100vh;
+  background-image: url(../../../../public/assets/heaphone.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  filter: blur(0.5px);
+  margin-bottom: 150px !important;
+}
+
+.headphone-card {
+  background-image: linear-gradient(to right, #f42c37 20%, rgba(255, 255, 255, 0.7));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 80vh;
+  color: white;
+  bottom: -80px;
+  position: absolute;
+  background-attachment: fixed;
+  border-radius: 3px;
+}
+
+.headphone-card img {
+  width: 600px;
+  transition: all 0.5s ease;
+}
+
+.headphone-card img:hover {
+  transform: scale(1.05);
+}
+
+.headphone-text {
+  text-align: center;
+}
+
+.headphone-text p {
+  font-weight: 700;
+  color: rgb(0, 0, 0, 0.66);
+  line-height: 1.25em;
+  font-size: 20px;
+}
+
+.digital .card {
+  position: relative;
+  overflow: visible;
+  height: 330px;
+  width: 100%;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.digital .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.digital .card h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: -1px;
+  color: #fff;
+  margin: 0;
+}
+
+.digital .card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -.4px;
+  color: #fff;
+  margin: 0 0 2px;
+}
+
+.digital .card h2 {
+  font-family: montserrat, Sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 61px;
+  letter-spacing: -1.3px;
+}
+
+.digital .card img {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.digital .earphone {
+  background-color: transparent !important;
+  background-image: linear-gradient(300deg, #363636 13%, #222 38%);
+  transition: all .4s ease-in-out 70ms;
+}
+
+.digital .earphone .card-body h2 {
+  color: #444;
+}
+
+.digital .card-body button {
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 100em;
+  position: absolute;
+  bottom: 30px;
+  background-color: #fff;
+  padding: 10px 30px;
+}
+
+
+.digital .earphone .card-body button {
+  background-color: #f42c37;
+  color: #fff;
+}
+
+.digital .earphone img {
+  width: 350px;
+  border: 0;
+}
+
+.digital .earphone .card-body button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.digital .gadgets {
+  background-color: transparent;
+  background-image: radial-gradient(at center center, #fec62e 0%, #fec62e 100%);
+}
+
+.digital .gadgets img {
+  width: 350px;
+  top: -30px;
+  right: -65px;
+}
+
+.digital .gadgets .card-body h2 {
+  color: #ffd76a;
+}
+
+.digital .gadgets .card-body button {
+  color: #fec62e;
+}
+
+.digital .gadgets .card-body button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.digital .laptop {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #f42c37 61%, #ff4e59 100%)
+}
+
+.digital .laptop img {
+  width: 480px;
+  bottom: -40px;
+  right: -65px;
+}
+
+.digital .laptop .card-body {
+  margin-left: 40px;
+}
+
+.digital .laptop .card-body h2 {
+  color: #f6565f;
+  font-size: 50px;
+}
+
+.digital .laptop .card-body button {
+  color: #ff4e59;
+}
+
+.digital .laptop .card-body button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.digital .console {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #edeced 0%, #eef0f3 100%)
+}
+
+.digital .console img {
+  width: 250px;
+  right: 0;
+  bottom: -40px;
+}
+
+.digital .console .card-body {
+  margin-left: 40px;
+}
+
+.digital .console .card-body h4 {
+  color: #000;
+}
+
+.digital .console .card-body p {
+  color: #000;
+}
+
+.digital .console .card-body h2 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.digital .console .card-body button {
+  background-color: #f42c37;
+  color: #fff;
+}
+
+.digital .console .card-body button:hover {
+  background-color: #000;
+}
+
+.digital .oculus {
+  background-color: #2dd06f;
+  overflow: hidden;
+}
+
+.digital .oculus img {
+  width: 500px;
+  right: -10px;
+  bottom: 30px;
+  transform: scale(1.3);
+}
+
+.digital .oculus .card-body h2 {
+  color: #57d68b;
+}
+
+.digital .oculus .card-body button {
+  color: #2dcc6e;
+}
+
+.digital .oculus .card-body button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.digital .speaker {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #1478ff 0%, #1891ff 100%);
+  overflow: hidden;
+}
+
+.digital .speaker img {
+  width: 350px;
+  right: -55px;
+  bottom: -30px;
+}
+
+.digital .speaker .card-body h2 {
+  color: #3a98ff;
+
+}
+
+.digital .speaker .card-body button {
+  color: #1a9dff;
+}
+
+.digital .speaker .card-body button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .about-text h2 {
+    padding: 0 150px;
+  }
+
+  .about-text p {
+    padding: 0 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  .bg-light-blue {
+    height: 85vh;
+  }
+
+  .bg-light-blue img {
+    width: 350px;
+  }
+
+  .headphone .container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .headphone-card {
+    margin: 0;
+    width: 350px;
+    height: 60vh;
+    background-image: linear-gradient(to right, #e72424 60%, rgba(255, 255, 255, 0.8))
+  }
+
+  .headphone-card img {
+    width: 250px;
+  }
+
+  .headphone-text {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .headphone-text h5 {
+    font-size: 18px;
+  }
+
+}
