@@ -119,7 +119,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png",
-    "incart": false
+    "incart": true
   },
   {
     "id": 3,
@@ -365,7 +365,7 @@
       "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/3.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/thumbnail.png",
-    "incart": false
+    "incart": true
   },
   {
     "id": 7,
