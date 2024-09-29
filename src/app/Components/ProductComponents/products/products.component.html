@@ -32,7 +32,7 @@
       <div class="col">
               <div class="card h-100 shadow-sm">
                 <img [src]="product.images[0]" class="card-img-top" alt="...">
-                <div class="label-top shadow-sm p-3">{{product.title}}</div> <div class="card-body"> <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{product.price | currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a [routerLink]="['/prodDetails',product.id]" class="small text-muted">view details</a></span>
+                <div class="label-top shadow-sm p-3">{{product.title}}</div> <div class="card-body"> <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{product.price | currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a [routerLink]="['/prodDetails',product.id]" class=" view">view details</a></span>
                 </div>
                 <div class="star-rating">
                   <i *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"

@@ -1,19 +1,38 @@
-
-*{
-    box-sizing: border-box;
-    padding: 0;
+body, html {
     margin: 0;
-    font-family: "Playwrite DE Grund", cursive;
+    padding: 0;
+    height: 100%;
 }
-body{
-    line-height: 1.5;
+
+.card-wrapper {
+    width: 100%; 
+    min-height: 60vh; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
-.card-wrapper{
-    max-width: 1100px;
-    margin: 0 auto;
+
+.card {
+    width: 100%; 
+    max-width: 1100px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
+
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        padding: 10px; 
+    }
+}
+
 img{
-    width: 100%;
+    width: 70%;
     display: block;
 }
 .img-display{
@@ -23,9 +42,10 @@ img{
     display: flex;
     width: 100%;
     transition: all 0.5s ease;
+    justify-content: center;
 }
 .img-showcase img{
-    min-width: 100%;
+    min-width: 70%;
 }
 .img-select{
     display: flex;
@@ -204,3 +224,36 @@ img{
         padding-top: 0;
     }
 }
+a{
+    text-decoration: none;
+  }
+  .texxt{
+    font-size: 20px;
+  }
+  .star-rating {
+    display: inline-block;
+  }
+  
+  .star-rating .fa {
+    font-size: 1.5em;
+    color: gold;
+    margin-right: 0.1em;
+  }
+  select{
+    border-radius: 10px;
+    border-color: rgb(20, 78, 20);
+    color: rgb(20, 78, 20);
+    margin: 0 1rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+  select option{
+    color:rgb(20, 78, 20);;
+  }
+  .star-rating .fa {
+    font-size: 1.5em;
+    color: gold;
+    margin-right: 0.1em;
+  }
+  
