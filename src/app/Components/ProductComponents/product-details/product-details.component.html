@@ -1,39 +1,86 @@
-<div class="d-flex justify-content-center">
-  <div class="row row-cols-1  g-4 m-5">
-  
-    <div class=" ">
-            <div class="card h-100 shadow-sm">
-              <img [src]="prodDetails.images[0]" class="card-img-top" alt="...">
-              <div class="label-top shadow-sm p-3">{{ prodDetails.title}}</div> <div class="card-body"> <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{prodDetails.price | currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span>
-              </div>
-              <div class="star-rating">
-                <i *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
-                   class="fa"
-                   [class.fa-star]="i < prodDetails.rating"
-                   [class.fa-star-o]="i >= prodDetails.rating">
-                </i>
-              </div>
-              <h5 class="card-title">
-                {{prodDetails.description}}</h5>
-              <h5 class="card-title text-secondary">
-              available in stock:  <span class="text-primary ">{{prodDetails.stock}}</span> items</h5>
-              <div class="text-center my-4">
-                      <div class="clearfix mb-1">
-                <span class="float-start"><i class="fa fa-question-circle">
-  
-                </i></span> <span class="float-end"><i class="fa fa-plus">
-  
-                </i>
-              </span>
-              <button
-              class="btn btn-primary mt-3 "> <a class="textt"  [routerLink]="['']">Back to Products List</a></button>
-             </div>
-             </div>
-            </div>
-          </div>
-  
+<div class="card-wrapper">
+  <div class="card">
+    <!-- card left -->
+    <div class="product-imgs">
+      <div class="img-display">
+        <div class="img-showcase">
+          <img [src]="prodDetails.images[0]" class="card-img-top" alt="...">
+
+        </div>
+      </div>
+      <div class="img-select">
+        <div class="img-item">
+          <a href="#" data-id="1">
+            <img [src]="prodDetails.images[0]" class="card-img-top" alt="..."> </a>
+        </div>
+        <div class="img-item">
+          <a href="#" data-id="2">
+            <img [src]="prodDetails.images[0]" class="card-img-top" alt="..."> </a>
+        </div>
+        <div class="img-item">
+          <a href="#" data-id="3">
+            <img [src]="prodDetails.images[0]" class="card-img-top" alt="..."> </a>
+        </div>
+        <div class="img-item">
+          <a href="#" data-id="4">
+            <img [src]="prodDetails.images[0]" class="card-img-top" alt="...">
+          </a>
+        </div>
+      </div>
     </div>
-  
-  
+    <!-- card right -->
+    <div class="product-content">
+      <h3 class="product-title" style="font-size: 27px; padding-bottom: 10px;">{{prodDetails.title}}</h3>
+      <a href="#" class="product-link">visit Our store</a>
+      <div class="star-rating">
+        <i *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+           class="fa"
+           [class.fa-star]="i < prodDetails.rating"
+           [class.fa-star-o]="i >= prodDetails.rating">
+        </i>
+      </div>
+
+      <div class="product-price">
+        <p class="last-price">Old Price: <span>$257.00</span></p>
+        <p class="new-price">New Price: <span>{{prodDetails.price}}</span></p>
+      </div>
+
+      <div class="product-detail">
+        <h2>about this item: </h2>
+        <p>{{prodDetails.description}}</p>
+        
+        <ul>
+          <li>Available: <span>{{prodDetails.stock}}</span></li>
+          <li>Category: <span>{{prodDetails.category}}</span></li>
+          <li>Shipping Area: <span>All over the world</span></li>
+          <li>Shipping Fee: <span>Free</span></li>
+        </ul>
+      </div>
+
+      <div class="purchase-info">
+        <input type="number" min="0" value="1">
+        
+        <button type="button" class="btn "> <a class="textt" [routerLink]="['/products']">Back to Products List</a></button>
+      </div>
+
+      <div class="social-links">
+        <p>Share At: </p>
+        <a href="#">
+          <i class="fa fa-linkedin "></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-pinterest"></i>
+        </a>
+      </div>
+    </div>
   </div>
-  
+</div>
