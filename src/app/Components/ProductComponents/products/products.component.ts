@@ -16,6 +16,7 @@ export class ProductsComponent implements OnInit {
   productListData: any[] = [];
   searchName: string = '';
   filteredProductListData: any[] = [];
+  catgoryList: any[] = [];
   price :number =20
   constructor(private prodServ: ProductserviceService, private router: Router, private toastr: ToastrService) {}
 
@@ -25,9 +26,30 @@ export class ProductsComponent implements OnInit {
       this.productListData = data;
       this.filteredProductListData = data; // Initialize filtered list
       console.log(this.filteredProductListData);
+       this.insertOptions()
     });
   }
+ //remove dublicate item in catgoryList
+  removeDuplicates<T>(arr: T[]): T[] {
+    return Array.from(new Set(arr));
+  }
+  //insert option into select
+  insertOptions() {
+    const selectElement = document.getElementById("Categories") as HTMLSelectElement
 
+    for (let i = 0; i < this.productListData.length; i++) {
+      this.catgoryList[i] = this.productListData[i].category
+    }
+    const uniqueNumbers = this.removeDuplicates(this.catgoryList)
+    console.log(this.catgoryList)
+    console.log(selectElement)
+    for (let i = 0; i < uniqueNumbers.length; i++) {
+      const option = document.createElement('option');
+      option.value = uniqueNumbers[i]
+      option.textContent = uniqueNumbers[i]
+      selectElement.appendChild(option);
+    }
+  }
   addToCart(product: any) {
     if (product.incart) {
       // If the product is already in the cart, remove it
@@ -73,5 +95,18 @@ export class ProductsComponent implements OnInit {
     this.filteredProductListData = this.productListData.filter((product) => {
       return product.price <=input.value
     });
+  }
+   //filter by category
+  filterCards($event: Event) {
+    const input = $event.target as HTMLInputElement
+    if (input.value.toLowerCase() == 'categories') {
+      this.filteredProductListData = this.productListData
+    } else {
+      this.filteredProductListData = this.productListData.filter((product) => {
+        return product.category.toLowerCase() == (input.value.toLowerCase())
+      }
+      );
+    }
+
   }
 }

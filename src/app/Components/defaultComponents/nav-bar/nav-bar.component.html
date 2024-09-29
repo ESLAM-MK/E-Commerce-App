@@ -1,45 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light  text-white bg-primary">
-  <div class="container-fluid">
-    <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa fa-bars"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <H1 class="mx-3">E-Commerce</H1>
-
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-
-          <a class="nav-link text-white" routerLinkActive="active" routerLink="/">Home</a>
-        </li>
-        <li class="nav-item ">
-
-          <a class="nav-link text-white" routerLinkActive="active" routerLink="/products">Products</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white" routerLinkActive="active" routerLink="/about">About</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white" routerLinkActive="active" routerLink="/contact">Contact Us</a>
-        </li>
-
-        <li class="nav-item mt-2 mx-3">
-          <a class="text-dark " routerLinkActive="active" routerLink="/cart"> Cart
-            <i class="fa fa-shopping-cart"></i>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-    <div class="d-flex align-items-center">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <li class="nav-item">
-          <a class="nav-link text-white"  routerLink="/login">Log in</a>
-        </li>
-      </ul>
-    </div>
+<nav class="navbar">
+  <div class="navbar-logo col-md-4 col-sm3">
+    <H1 class="mx-3">E-Commerce</H1>
   </div>
+  <div class="list col-md-4 col-sm-4">
+  <ul class="navbar-buttons">
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLinkActive="active" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item ">
+
+      <a class="nav-link text-white" routerLinkActive="active" routerLink="/products">Products</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link text-white" routerLinkActive="active" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link text-white" routerLinkActive="active" routerLink="/contact">Contact Us</a>
+    </li>
+  </ul>
+  </div>
+  <div class="connect col-md-3 col-sm-1">
+    <a class="cart" routerLinkActive="active" routerLink="/cart"> Cart
+      <i class="fa fa-shopping-cart"></i>
+    </a>
+    <li class="nav-item">
+      <a class="nav-link text-white"  routerLink="/login">Log in</a>
+    </li>
+ 
+</div>
 </nav>
