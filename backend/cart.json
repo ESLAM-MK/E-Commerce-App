@@ -1,1 +1,132 @@
-[]
+[
+  {
+    "_id": "66f8e8f75218a00d5dc15460",
+    "id": 12,
+    "title": "Annibale Colombo Sofa",
+    "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+    "category": "furniture",
+    "price": 2499.99,
+    "discountPercentage": 18.54,
+    "rating": 3.08,
+    "stock": 16,
+    "tags": [
+      "furniture",
+      "sofas"
+    ],
+    "brand": "Annibale Colombo",
+    "sku": "LUU95CQP",
+    "weight": 3,
+    "dimensions": {
+      "width": 20.97,
+      "height": 19.11,
+      "depth": 25.81
+    },
+    "warrantyInformation": "1 month warranty",
+    "shippingInformation": "Ships overnight",
+    "availabilityStatus": "In Stock",
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "Very satisfied!",
+        "date": "2024-05-23T08:56:21.620Z",
+        "reviewerName": "Tyler Davis",
+        "reviewerEmail": "tyler.davis@x.dummyjson.com"
+      },
+      {
+        "rating": 5,
+        "comment": "Excellent quality!",
+        "date": "2024-05-23T08:56:21.620Z",
+        "reviewerName": "Hannah Robinson",
+        "reviewerEmail": "hannah.robinson@x.dummyjson.com"
+      },
+      {
+        "rating": 3,
+        "comment": "Waste of money!",
+        "date": "2024-05-23T08:56:21.620Z",
+        "reviewerName": "Madison Collins",
+        "reviewerEmail": "madison.collins@x.dummyjson.com"
+      }
+    ],
+    "returnPolicy": "7 days return policy",
+    "minimumOrderQuantity": 1,
+    "meta": {
+      "createdAt": "2024-05-23T08:56:21.620Z",
+      "updatedAt": "2024-05-23T08:56:21.620Z",
+      "barcode": "0426785817074",
+      "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+    },
+    "images": [
+      "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
+      "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/2.png",
+      "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/3.png"
+    ],
+    "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png",
+    "incart": true,
+    "quantity": 1
+  },
+  {
+    "_id": "66f8e8f75218a00d5dc1545d",
+    "id": 9,
+    "title": "Dolce Shine Eau de",
+    "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+    "category": "fragrances",
+    "price": 69.99,
+    "discountPercentage": 11.47,
+    "rating": 2.68,
+    "stock": 3,
+    "tags": [
+      "fragrances",
+      "perfumes"
+    ],
+    "brand": "Dolce & Gabbana",
+    "sku": "1NBFK980",
+    "weight": 5,
+    "dimensions": {
+      "width": 17,
+      "height": 24.57,
+      "depth": 13.3
+    },
+    "warrantyInformation": "5 year warranty",
+    "shippingInformation": "Ships in 1-2 business days",
+    "availabilityStatus": "Low Stock",
+    "reviews": [
+      {
+        "rating": 4,
+        "comment": "Very satisfied!",
+        "date": "2024-05-23T08:56:21.619Z",
+        "reviewerName": "Xavier Wright",
+        "reviewerEmail": "xavier.wright@x.dummyjson.com"
+      },
+      {
+        "rating": 1,
+        "comment": "Poor quality!",
+        "date": "2024-05-23T08:56:21.619Z",
+        "reviewerName": "Mila Hernandez",
+        "reviewerEmail": "mila.hernandez@x.dummyjson.com"
+      },
+      {
+        "rating": 5,
+        "comment": "Very happy with my purchase!",
+        "date": "2024-05-23T08:56:21.619Z",
+        "reviewerName": "Sophia Brown",
+        "reviewerEmail": "sophia.brown@x.dummyjson.com"
+      }
+    ],
+    "returnPolicy": "30 days return policy",
+    "minimumOrderQuantity": 9,
+    "meta": {
+      "createdAt": "2024-05-23T08:56:21.619Z",
+      "updatedAt": "2024-05-23T08:56:21.619Z",
+      "barcode": "1939383392674",
+      "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+    },
+    "images": [
+      "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/1.png",
+      "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/2.png",
+      "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/3.png"
+    ],
+    "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/thumbnail.png",
+    "incart": true,
+    "quantity": 1
+  }
+]

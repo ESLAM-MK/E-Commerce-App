@@ -1,31 +1,27 @@
-<nav class="navbar">
-  <div class="navbar-logo col-md-4 col-sm3">
+<nav class="navbar" #navbar [ngClass]="{ 'sticky': isSticky }">
+  <div class="navbar-logo col-md-4 col-sm-3">
     <H1 class="mx-3">E-Commerce</H1>
   </div>
   <div class="list col-md-4 col-sm-4">
-  <ul class="navbar-buttons">
-    <li class="nav-item">
-      <a class="nav-link text-white" routerLinkActive="active" routerLink="/">Home</a>
-    </li>
-    <li class="nav-item ">
-
-      <a class="nav-link text-white" routerLinkActive="active" routerLink="/products">Products</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link text-white" routerLinkActive="active" routerLink="/about">About</a>
-    </li>
-    <li class="nav-item ">
-      <a class="nav-link text-white" routerLinkActive="active" routerLink="/contact">Contact Us</a>
-    </li>
-  </ul>
+    <ul class="navbar-buttons">
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLinkActive="active" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLinkActive="active" routerLink="/products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLinkActive="active" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLinkActive="active" routerLink="/contact">Contact Us</a>
+      </li>
+    </ul>
   </div>
   <div class="connect col-md-3 col-sm-1">
-    <a class="cart" routerLinkActive="active" routerLink="/cart"> Cart
+    <a class="cart" routerLinkActive="active" routerLink="/cart">Cart
       <i class="fa fa-shopping-cart"></i>
     </a>
-    <li class="nav-item">
-      <a class="nav-link text-white"  routerLink="/login">Log in</a>
-    </li>
- 
-</div>
+      <a class="nav-link text-white" routerLink="/login">Log in</a>
+  </div>
 </nav>
