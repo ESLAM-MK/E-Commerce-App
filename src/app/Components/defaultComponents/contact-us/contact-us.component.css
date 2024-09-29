@@ -1,3 +1,18 @@
 .formWidth{
   width: 26rem;
 }
+*{
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 20px;
+  background-color: rgb(248, 238, 238);
+  padding: 5px 15px;
+}
+[placeholder]{
+  font-size: 17px;
+}
+input,textarea,button{
+  border-color: rgb(117, 96, 96);
+}
+button{
+  color: black;
+}
