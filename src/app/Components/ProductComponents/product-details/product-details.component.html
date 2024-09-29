@@ -6,6 +6,13 @@
               <img [src]="prodDetails.images[0]" class="card-img-top" alt="...">
               <div class="label-top shadow-sm p-3">{{ prodDetails.title}}</div> <div class="card-body"> <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{prodDetails.price | currency:'EURO':'symbol-narrow'}}</span> <span class="float-end"><a href="#" class="small text-muted">Reviews</a></span>
               </div>
+              <div class="star-rating">
+                <i *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                   class="fa"
+                   [class.fa-star]="i < prodDetails.rating"
+                   [class.fa-star-o]="i >= prodDetails.rating">
+                </i>
+              </div>
               <h5 class="card-title">
                 {{prodDetails.description}}</h5>
               <h5 class="card-title text-secondary">
