@@ -17,7 +17,7 @@ export class ProductsComponent implements OnInit {
   searchName: string = '';
   filteredProductListData: any[] = [];
   catgoryList: any[] = [];
-  price :number =20
+  price :number =3000
   constructor(private prodServ: ProductserviceService, private router: Router, private toastr: ToastrService) {}
 
   ngOnInit(): void {
