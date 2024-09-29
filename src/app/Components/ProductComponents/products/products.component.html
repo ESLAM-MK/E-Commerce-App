@@ -3,6 +3,9 @@
     <input (input)="searchByName($event)"
       #name (keyup.enter)="onKeyUp(name.value)" class="mx-2 w-50 border border-success p-2" type="text" placeholder="Search by name" >
     <button (click)="onKeyUp(name.value)" class="btn btn-success">Search</button>
+    <select id="Categories" (click)="filterCards($event)">
+      <option selected value="categories">Filter By Categoreeis </option>
+    </select>
   </div>
   <div class="container my-4">
     <div class="row">
