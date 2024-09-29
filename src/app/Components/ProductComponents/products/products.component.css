@@ -4,3 +4,32 @@ a{
 .texxt{
   font-size: 20px;
 }
+.star-rating {
+  display: inline-block;
+}
+
+.star-rating .fa {
+  font-size: 1.5em;
+  color: gold;
+  margin-right: 0.1em;
+}
+select{
+  border-radius: 10px;
+  border-color: rgb(20, 78, 20);
+  color: rgb(20, 78, 20);
+  margin: 0 1rem;
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+select option{
+  color:rgb(20, 78, 20);;
+}
+.view{text-decoration: underline;
+  font-size: 1.5rem;
+  color: rgb(5, 5, 49);
+
+}
+.view :hover{
+  color:rgb(149, 149, 198); ;
+}

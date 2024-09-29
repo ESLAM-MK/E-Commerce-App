@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductserviceService {
-  private apiUrl = 'http://localhost:3000/api';  // Your backend URL
+  private apiUrl = 'http://localhost:3001/api';  // Your backend URL
 
   constructor(private toastr: ToastrService, private http: HttpClient) {}
 

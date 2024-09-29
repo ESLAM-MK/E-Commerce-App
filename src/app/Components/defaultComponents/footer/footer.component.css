@@ -1,3 +1,28 @@
 a{
   text-decoration: none;
 }
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #000000;
+padding: 10px 20px;
+font-size: 1.3rem;
+font-family: "Playwrite DE Grund", cursive;;
+box-shadow: -8px -14px 5px rgba(41, 30, 30, 0.301);}
+button a{
+color: aliceblue;
+}
+button a:hover{
+  color: #000000;
+}
+.shape{
+  background-color: darkgoldenrod;
+  height: 250px;
+  width: 10px;
+}
+.contain{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

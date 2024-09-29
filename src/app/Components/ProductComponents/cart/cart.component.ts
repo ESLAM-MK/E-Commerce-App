@@ -13,6 +13,7 @@ export class CartComponent {
   items: any[] = [];
   totalQuantity: number = 0;
   totalPrice: number = 0;
+  path !:string
 
   constructor(private prodServ: ProductserviceService) {}
 
@@ -35,10 +36,13 @@ export class CartComponent {
   }
 
   decreaseQuantity(item: any): void {
+    if(item.quantity>1){
     item.quantity--;
     this.prodServ.updateCartQuantity(item.id, item.quantity).subscribe(() => {
       this.calculateTotal();
-    });
+
+    });}
+
   }
 
   increaseQuantity(item: any): void {
@@ -55,10 +59,19 @@ export class CartComponent {
   getTotalPrice(): number {
     return this.items.reduce((acc, item) => acc + (item.price || 0) * (item.quantity || 1), 0);
   }
-  
+
 
   calculateTotal() {
     this.totalQuantity = this.getTotalQuantity();
     this.totalPrice = this.getTotalPrice();
+  }
+  checkItems():string{
+    if(this.items.length>0){
+      this.path="/payment"
+    }
+    else {
+      this.path="/cart"
+    }
+    return this.path
   }
 }

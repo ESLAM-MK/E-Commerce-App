@@ -63,8 +63,11 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary w-100 mt-3">PAY</button>
+         <a [routerLink]="validatePath()"><button type="submit" class="btn btn-primary w-100 mt-3">PAY</button></a>
+
+          <a routerLink="/cart"><button  class="btn btn-success w-100 mt-3">Back to your cart</button></a>
         </form>
+
       </div>
     </div>
   </div>

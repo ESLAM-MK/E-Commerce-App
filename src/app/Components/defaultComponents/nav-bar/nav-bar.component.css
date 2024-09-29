@@ -1,21 +1,53 @@
-.activeRoute{
-  font-weight: bolder;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  height: 12vh;
+  font-size: 1.2rem;
+  font-family: "Playwrite DE Grund", cursive;
 }
-a
-{
-  text-decoration: none;
+
+.list{
+  width: 40%;
+}
+ul,.connect{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.connect{
+  width: 15%;
+}
+.connect .cart{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: rgba(214, 200, 200, 0.678);
+}
+.connect li a{
+  transform: translate(0,-15px);
+}
+.navbar-buttons li {
+  list-style: none;
+}
+.navbar-buttons li select, .navbar-buttons li a ,.navbar-buttons li a i{
+  background-color: transparent;
+  border: none;
+  color: white;
 }
 h1 {
   font-family: 'Playfair Display', serif; /* Elegant, high-quality font */
-  font-size: 3rem; /* Larger font size for emphasis */
-  font-weight: 700; /* Bold to stand out */
+  font-size: 2rem; /* Larger font size for emphasis */
+  font-weight: bold; /* Bold to stand out */
   color: #FFD700; /* Golden yellow for a strong contrast */
   letter-spacing: 0.05em; /* Slight spacing between letters */
   text-transform: uppercase; /* Make the text appear more formal */
   margin: 20px 0; /* Control the spacing around the heading */
   text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.3); /* Subtle shadow for depth in a matching color */
   position: relative;
-  padding-left: 20px; /* Create space for the decorative border */
+  padding-left: 10px; 
+/* Create space for the decorative border */
 }
 
 h1::before {

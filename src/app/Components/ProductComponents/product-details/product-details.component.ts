@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { ProductserviceService } from '../../../Services/productservice.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { CommonModule, NgClass } from '@angular/common';
+import { CommonModule, NgClass, NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink, NgClass],
+  imports: [FormsModule, CommonModule, RouterLink, NgClass, NgFor],
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css'] 
 })
