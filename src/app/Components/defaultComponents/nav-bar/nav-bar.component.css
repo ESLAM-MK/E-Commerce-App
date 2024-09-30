@@ -10,6 +10,30 @@
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  transition: color 0.3s ease;
+  font-weight: 700;
+  /* font-family: 'Poppins', sans-serif; */
+  display: flex;
+  line-height: 45px;
+
+}
+
+.navbar-brand:hover {
+  color: #f0a500;
+}
+
+.active {
+  color: #333 !important;
+  background-color: #f0a500;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 /* Make the navbar sticky after scroll */
@@ -22,6 +46,67 @@
 }
 
 /* Add transitions for smooth effect */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Navbar buttons styles */
+.nav-item {
+  line-height: 45px;
+
+}
+.nav-item a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 0;
+}
+
+.nav-item a:hover {
+  background-color: transparent !important;
+  color: #f0a500 !important;
+}
+
+.fa-shopping-cart {
+  margin-left: 5px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .lg-page {
+    display: none;
+  }
+
+}
+
+
+
+
+
+/* .navbar {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .sticky + .content {
   padding-top: 60px;
 }
@@ -76,13 +161,11 @@
   margin-left: 5px;
 }
 
-/* Sticky Navbar on Scroll */
 .navbar.scrolled {
   background-color: rgba(51, 51, 51, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar-buttons {
     flex-direction: column;
@@ -92,4 +175,4 @@
   .navbar-buttons .nav-item {
     margin: 10px 0;
   }
-}
+} */

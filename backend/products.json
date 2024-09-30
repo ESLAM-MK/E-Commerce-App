@@ -121,7 +121,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png",
-    "incart": false
+    "incart": true
   },
   {
     "_id": "66f8e8f75218a00d5dc15457",
