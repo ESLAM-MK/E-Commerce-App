@@ -23,12 +23,16 @@
   line-height: 45px;
 
 }
+.active{
+  color: transparent;
+  background-color: transparent;
+}
 
 .navbar-brand:hover {
   color: #f0a500;
 }
 
-.active {
+.active-exact {
   color: #333 !important;
   background-color: #f0a500;
   font-weight: 700;
