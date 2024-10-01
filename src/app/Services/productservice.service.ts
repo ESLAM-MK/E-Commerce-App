@@ -38,4 +38,5 @@ export class ProductserviceService {
   getTotalPrice(): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/cart/total`);
   }
+
 }

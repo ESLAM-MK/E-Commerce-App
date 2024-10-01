@@ -121,7 +121,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png",
-    "incart": true
+    "incart": false
   },
   {
     "_id": "66f8e8f75218a00d5dc15457",
@@ -562,7 +562,7 @@
       "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/3.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/thumbnail.png",
-    "incart": true
+    "incart": false
   },
   {
     "_id": "66f8e8f75218a00d5dc1545e",
@@ -751,8 +751,7 @@
       "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/2.png",
       "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/3.png"
     ],
-    "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png",
-    "incart": true
+    "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png"
   },
   {
     "_id": "66f8e8f75218a00d5dc15461",
@@ -1832,7 +1831,6 @@
     "images": [
       "https://cdn.dummyjson.com/products/images/groceries/Kiwi/1.png"
     ],
-    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png",
-    "incart": false
+    "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png"
   }
 ]
