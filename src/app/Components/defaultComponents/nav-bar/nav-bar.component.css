@@ -29,12 +29,12 @@
 }
 
 .navbar-brand:hover {
-  color: #f0a500;
+  color: #f3a909;
 }
 
 .active-exact {
-  color: #333 !important;
-  background-color: #f0a500;
+  color: #3b3b3b !important;
+  background-color: #f3a909;
   font-weight: 700;
   transition: background-color 0.3s ease, color 0.3s ease;
 
