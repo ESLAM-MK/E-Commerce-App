@@ -5,29 +5,29 @@ body, html {
 }
 
 .card-wrapper {
-    width: 100%; 
-    min-height: 60vh; 
-    margin: 0 auto; 
-    padding: 20px; 
+    width: 100%;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .card {
-    width: 100%; 
-    max-width: 1100px; 
-    height: 100%; 
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
 }
 
 
 @media screen and (max-width: 768px) {
     .card-wrapper {
-        padding: 10px; 
+        padding: 10px;
     }
 }
 
@@ -233,7 +233,7 @@ a{
   .star-rating {
     display: inline-block;
   }
-  
+
   .star-rating .fa {
     font-size: 1.5em;
     color: gold;
@@ -256,4 +256,11 @@ a{
     color: gold;
     margin-right: 0.1em;
   }
-  
+
+  .img-showcase img{
+    min-width: 70%;
+    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
