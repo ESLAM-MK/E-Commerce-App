@@ -183,7 +183,7 @@
       "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png"
     ],
     "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/thumbnail.png",
-    "incart": true
+    "incart": false
   },
   {
     "_id": "66f8e8f75218a00d5dc15458",
