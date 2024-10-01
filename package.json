@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "bootstrap": "^5.3.3",
+    "e-commerce-app": "file:",
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
     "i": "^0.3.7",
